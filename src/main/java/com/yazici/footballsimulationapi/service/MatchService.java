@@ -112,9 +112,9 @@ public class MatchService {
     private List<GoalMinuteDto> setGoalMinuteDtoRecordFromList(List<GoalMinuteRecord> goalMinuteRecordList){
 
         return goalMinuteRecordList.stream()
-                .map(goalrecord -> GoalMinuteDto.builder()
-                        .minute(goalrecord.getGoalMinute())
-                        .playerFullName(goalrecord.getPlayer().getFirstName() + " " + goalrecord.getPlayer().getLastName())
+                .map(goalRecord -> GoalMinuteDto.builder()
+                        .minute(goalRecord.getGoalMinute())
+                        .playerFullName(goalRecord.getPlayer().getFirstName() + " " + goalRecord.getPlayer().getLastName())
                         .build()).collect(Collectors.toList());
     }
 
