@@ -1,0 +1,1 @@
+INSERT INTO public.league (id, country, name) VALUES (1, 'Turkey', 'Super Lig');
